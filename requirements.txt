@@ -1,0 +1,29 @@
+# FastAPI, ASGI, CORS, and API support
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Concurrency (used in behavioral_service)
+aiohttp
+
+# ML and Data Science
+tensorflow>=2.16.1   # for emotion/pose services
+ultralytics           # for YOLO model (drowsiness_service)
+torch                 # for PyTorch models
+scikit-learn          # for model scaler and transformers
+mediapipe             # for pose detection
+facenet-pytorch       # for embeddings (behavioral_service)
+torchvision           # may be required for facenet-pytorch transforms
+
+# Computer Vision and Image Processing
+opencv-python-headless
+Pillow
+
+# Data manipulation, arrays, counters
+numpy
+
+# Dashboard and UI
+streamlit             # dashboard_service
+
+# Miscellaneous
+requests              # dashboard uses it for API calls
