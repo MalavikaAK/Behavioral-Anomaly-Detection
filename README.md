@@ -25,12 +25,12 @@ This project utilizes both public and synthetic datasets to train the behavioral
 ### Public Datasets (Facial Emotion & Drowsiness)
 
 1. **Facial Emotion Dataset (FER-13)**
-   - **Source:** Kaggle
+   - **Source:** https://www.kaggle.com/datasets/msambare/fer2013 
    - **Why it fits Behavioral Analytics:** Emotions provide critical non-verbal cues for assessing an individual's psychological state and intent in public, fitting perfectly into the behavioral analysis framework.
    - **Engineered Behavioral Features:** Raw grayscale images (48x48) are rescaled and processed by a CNN. The model focuses on the 7 basic emotions (Happy, Surprise, Angry, Disgust, Fear, Sad, Neutral).
 
 2. **Drowsiness Dataset**
-   - **Source:** Roboflow Driver Drowsiness Dataset
+   - **Source:** Roboflow Driver Drowsiness Dataset - Using roboflow api-key
    - **Why it fits Behavioral Analytics:** Drowsiness and fatigue are behavioral indicators that can correlate with abnormalities such as loitering, distress, or impaired decision-making in public areas.
    - **Engineered Behavioral Features:** The YOLOv8 model extracts spatial features directly from bounding box annotations for the eyes and face to classify individuals into `awake` and `drowsy` states.
 
